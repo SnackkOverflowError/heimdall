@@ -1,7 +1,11 @@
-package main 
+package main
 
-import "fmt"
+import (
+	"heimdall/memtable/rbtree"
+)
+
+// go run main.go | dot -Tpng  > test.png && open test.png
 
 func main() {
-	fmt.Println("hello")
+	rbtree.RBDisplayTest()
 }
